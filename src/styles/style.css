@@ -1,0 +1,77 @@
+:root {
+    --color-baby-blue: #e7f2f8;
+    --color-aquamarine: #74bdcb;
+    --color-dark-cyan: #1c2d30;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--color-aquamarine);
+    width: min(960px, 90%);
+    margin-inline: auto;
+  }
+  
+  .branches-wrapper {
+    padding: 5rem;
+    overflow-x: scroll;
+    /* white-space: nowrap; */
+    display: grid;
+    grid-template-columns: repeat(5, 100%);
+  }
+  
+  .branch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+    /* gap: 3rem; */
+    text-align: center;
+    color: var(--color-dark-cyan);
+  }
+  
+  .branch-start {
+    background-color: var(--color-baby-blue);
+    padding: 3rem;
+  
+  }
+  
+  .reveal{
+    width: min(85%, 25rem);
+    border-radius: 5px;
+    padding: 1rem;
+    color: var(--color-aquamarine);
+  }
+  
+  .arrow {
+    width: 1px;
+    padding: 1px;
+    height: 6rem;
+    background-color: var(--color-aquamarine);
+  }
+  
+  .scroll-btn {
+    background-color: var(--color-baby-blue);
+    padding: 0.3rem 1rem;
+    border: none;
+    border-radius: 5px;
+    transition: opacity 0.2s;
+  }
+  
+  .scroll-btn:hover {
+    opacity: 0.7;
+  }
+  
+  .scroll-buttons {
+    position: fixed;
+    bottom: 3rem;
+    left: 1rem;
+    width: 100%;
+  }
+  
+  
